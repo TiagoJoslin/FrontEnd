@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS BÁSICO II</title>
+</head>
+<body>
+    <h1>JS BÁSICO II</h1>
+    <p>Link JS externo</p>
+    <img src="./img/helldiver-seaf-eagle.jpeg" width="320px" height="170px" title="Join the Helldivers" />
+    <br><br>
+    <div id="Exe01">
+        <h1>Exe01 - Calculadora democrática</h1>
+        <input id="num1" type="number" name="num1" placeholder="Digite um Número" /> <br><br>
+        <input id="num2" type="number" name="num2" placeholder="DIgite um Número" /> <br><br>
+        <button onclick="soma()">Soma</button>
+        <button onclick="sub()">Subtração</button>
+        <button onclick="mult()">Multiplicação</button>
+        <button onclick="divi()">Divisão</button>
+        <br> <br>
+        <span>Resultado: </span>
+        <input id="result" type="text" name="result" readonly>
+
+        <script src="./JS/script01.js"></script>
+    </div>
+
+    <div id="Exe02">
+        <h1>Exe02 - Média democrática</h1>
+        <span>Digite os números separados por barra:</span>
+        <input id="valores" type="text" name="valores" /> <br><br>
+        <button onclick="calcularMedia()">Média</button> <br><br>
+        <p id="media">...</p>
+
+        <script src="./JS/script02.js"></script>
+    </div>
+
+    <div id="Exe03">
+        <h1>Exe03 - Verifique o Maior</h1>
+        <input type="number" id="n1" placeholder="Digite o primeiro número" /> <br>
+        <input type="number" id="n2" placeholder="Digite o segundo número" /> <br>
+        <input type="number" id="n3" placeholder="Digite o terceiro número" /> <br>
+        <br> <br>
+        <button onclick="verificar()">Verificar</button>
+        <br> <br>
+        <p id="respostaExe03"></p>
+
+        <script src="./JS/script03.js"></script>
+    </div>
+</body>
+</html>

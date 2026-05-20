@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS BÁSCIO III</title>
+</head>
+<body>
+    <h1>JS BÁSICO III</h1>
+    <p>Link JS externo</p>
+    <img src="./img/helldiver-seaf-eagle.jpeg" width="320px" height="170px" title="Join the Helldivers" /> <br><br>
+    <div id="Exe01">
+        <h1>Exercício 01</h1>
+        <p>Criar um botão que mostre uma mensagem de saudação em um parágrafo pré-existente, com base no nome digitado na caixa de texto logo acima do botão.</p>
+
+        <input type="text" id="txtExe01" placeholder="Digite seu nome">
+        <button onclick="mostrarMSG()">Clique aqui</button>
+        <p id="pExe01">...</p>
+    </div>
+
+    <div id="Exe02">
+        <h1>Exercício 2</h1>
+        <h3>Alterar o estilo de um texto ao clicar em um botão</h3>
+
+        <button onclick="trocaEstilo()" id="btnExe02">Trocar Estilo</button>
+        <p id="pExe02">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nesciunt vel numquam totam sit dolorum esse veritatis, maxime placeat tenetur porro, qui, cupiditate exercitationem voluptate! Incidunt ut culpa placeat consequuntur.</p>
+    </div>
+    
+    <div id="Exe03">
+        <h1>Exercício 3</h1>
+        <h3>Altere Cor da Página</h3>
+        <p>Clique no botão para alterar a cor da página</p>
+        <button onclick="trocaCor('red')" data-id="red" class="botao-clique">Vermelho</button>
+        <button onclick="trocaCor('blue')" data-id="blue" class="botao-clique">Azul</button>
+        <button onclick="trocaCor('green')" data-id="green" class="botao-clique">Verde</button>
+        <button onclick="trocaCor('')" data-id="original" class="botao-clique">Original</button>
+    </div>
+
+    <div id="Exe04">
+        <h1>Exercício 4</h1>
+        <p>1 - Cria novos parágrafos utilizando o método <b>createElement</b> e <b>appendChild.</b></p>
+        <p>2 - Remove o último parágrafo utilizando o método <b>removeChild</b> e <b>lastElementChild</b></p>
+        <button onclick="addParagrafo()">Criar Novo Parágrafo</button>
+        <button onclick="removeParagrafo()">Remover Último Parágrafo</button>
+        <div id="conteudo">
+
+        </div>
+    </div>
+
+    <div id="Exe05">
+        <h1>Exercício 5</h1>
+        <p>Mostra e esconde uma imagem ao clicar um determinado botão</p>
+        <img src="./img/helldiver-seaf-eagle.jpeg" width="320px" id="imgExe05" height="170px" title="Join the Helldivers" /> <br>
+        <button onclick="mostrarImg()">Mostrar Imagem</button>
+        <button onclick="escondeImg()">Esconde Imagem</button>
+    </div>
+
+    <div id="Exe06">
+        <h1>Exercício 06</h1>
+        <p>Troca a imagem para uma imagem do assunto selecionado pelo usuário</p>
+
+        <label for="tipoPropaganda">Escolha um tipo de propaganda</label><br>
+
+        <select name="Helldivers" id="tipoPropaganda" onchange="trocaImg(this.value)">
+            <option value="Marcha" id="Marcha">Default</option>
+            <option value="They Want You" id="TWY">They Want You</option>
+            <option value="Thank You Helldiver"id="TYH">Thank You Helldiver</option>
+            <option value="Stamp Out The Bots" id="SOTB">Stamp Out The Bots</option> 
+            <option value="We'll Beat Them Again" id="WWBTA">We'll Beat Them Again</option>
+        </select>
+        <br><br>
+    
+        <img id="imgExe06" src="./img/helldiver-seaf-eagle.jpeg" alt="Marcha" width="150px">
+</div>
+
+
+    <script src="./JS/script01.js"></script>
+</body>
+</html>

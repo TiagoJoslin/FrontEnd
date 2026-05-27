@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Básico IV</h1>
+    <p>Link JS externo</p>
+
+    <div id="Exe01">
+        <h1>Exercício 1</h1>
+        <p>Digite o seu nome na caixa de texto e clique no botão para receber a Saudação.</p>
+
+        <input type="text" id="nomeExe01" placeholder="Digite seu nome">
+        <button id="btnExe01">Mostrar Mensagem</button>
+        <p id="pExe01">...</p>
+        <hr>
+    </div>
+
+    <div id="Exe02">
+        <h1>Exercício 2</h1>
+        <p>Clique no botão para alterar o tamanho e a cor do texto de um parágrafo.</p>
+
+        <p id="pExe02">Existem 3 tipos de pessoas: As que sabem contar e as que não sabem!</p>
+        <button id="btnExe02">Alterar Estilo</button>
+        <hr>
+    </div>
+
+    <div id="Exe03">
+        <h1>Exercício 3</h1>
+        <p>Clique no botão para alterar a cor de fundo da tela. Deve ter 4 botões, sendo que um deles deve
+mostrar a cor original de fundo de tela.</p>
+
+            <button class="cor" data-cor="red" data-nome="Vermelho">Vermelho</button>
+            <button class="cor" data-cor="green" data-nome="Verde">Verde</button>
+            <button class="cor" data-cor="blue" data-nome="Azul">Azul</button>
+            <button class="cor" data-cor="" data-nome="Original">Original</button> <br><br>
+            <hr>
+    </div>
+
+    <div id="Exe04">
+        <h1>Exercício 4</h1>
+        <p>Clique no botão para criar novo parágrafo. Você deve digitar o texto a ser inserido no parágrafo. Um
+novo botão deve ser criado para remover sempre o ultimo parágrafo adicionado. Quando não houver
+mais parágrafos, uma msg deve ser apresentada informando esta condição</p>
+
+            <div id="conteudo">
+            <p>Criar ou remover parágrafos</p>
+            <button id="btnCriar">Novo Parágrafo</button>
+            <button id="btnRemover">Remover Parágrafo</button>
+            </div> <br> <br>
+            <hr>
+    </div>
+
+    <div id="Exe05">
+        <h1>Exercício 5</h1>
+        <p>Clique no botão para mostrar/oculta uma imagem</p>
+
+        <img src="./img/democracy.jpeg" alt="democracy" id="imgExe05"> <br>
+        <button id="btnExe05">Mostrar/Ocultar imagem</button>
+    </div>
+
+    <div id="Exe06">
+        <h1>Exercício 6</h1>
+        <p>Utilizando o elemento HTML SELECT para trocar a Imagem na tela</p>
+
+        <label for="tipoPropaganda">Escolha um tipo de propaganda</label><br>
+
+        <select name="Helldivers" id="selectExe06">
+            <option value="Marcha" id="Marcha">Default</option>
+            <option value="They Want You" id="TWY">They Want You</option>
+            <option value="Thank You Helldiver"id="TYH">Thank You Helldiver</option>
+            <option value="Stamp Out The Bots" id="SOTB">Stamp Out The Bots</option> 
+            <option value="We'll Beat Them Again" id="WWBTA">We'll Beat Them Again</option>
+        </select>
+        <br><br>
+    
+        <img id="imgExe06" src="./img/helldiver-seaf-eagle.jpeg" alt="Marcha" width="150px">
+    </div>
+
+
+    <script src="./JS/script01.js"></script>
+</body>
+</html>
